@@ -9,6 +9,30 @@ The official pnpm rewrite in Rust.
 
 pacquet is a port of the [pnpm](https://github.com/pnpm/pnpm) CLI from TypeScript to Rust. It is not a new package manager and not a reimagining of pnpm. Its behavior, flags, defaults, error codes, file formats, and directory layout will match pnpm exactly.
 
+# Pacquet for Android (Termux aarch64)
+
+Pre-compiled native **`pacquet`** binary (Fast Rust-based package manager compatible with pnpm registries) built specifically for **Android aarch64** running inside **Termux**.
+
+Bypass the multi-hour compilation wall and get a lightning-fast package manager running on your phone or tablet instantly.
+
+## Quick Install
+
+Download and extract the pre-compiled binary straight into your local Termux path:
+```bash
+# 1. Download the release tarball
+curl -LO [https://github.com/circyw-ui/pacquet-android-aarch64/raw/main/target/release/pacquet-android-aarch64-termux.tar.gz](https://github.com/circyw-ui/pacquet-android-aarch64/raw/main/target/release/pacquet-android-aarch64-termux.tar.gz)
+
+# 2. Extract the binary
+tar -xzvf pacquet-android-aarch64-termux.tar.gz
+
+# 3. Move it to your local bin and make it executable
+chmod +x pacquet
+mv pacquet $PREFIX/bin/pnpm
+
+# 4. Verify installation
+pnpm --version
+
+
 ## Roadmap
 
 pacquet will become the installation engine of pnpm. The transition will happen in two phases.

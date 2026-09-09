@@ -1,7 +1,4 @@
-/target
-.pacquet
-node_modules
-.npmrc
-/bench-work-env
-*.tmp
-.claude
+target/
+**/*.rlib
+**/*.rmeta
+.DS_Store

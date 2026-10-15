@@ -53,7 +53,7 @@ httpdate = { version = "1.0.3" }
 ignore = { version = "0.4.25" }
 indexmap = { version = "2.14.0", features = ["serde"] }
 insta = { version = "1.47.2", features = ["yaml", "glob", "walkdir"] }
-itertools = { version = "0.14.0" }
+itertools = { version = "0.15.0" }
 futures-util = { version = "0.3.32" }
 gethostname = { version = "1" }
 miette = { version = "7.6.0", features = ["fancy"] }
